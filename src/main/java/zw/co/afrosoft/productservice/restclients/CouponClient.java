@@ -7,6 +7,6 @@ import zw.co.afrosoft.productservice.domain.Coupon;
 
 @FeignClient("COUPON-SERVICE")
 public interface CouponClient {
-    @GetMapping("/coupons/{code}")
+    @GetMapping("api/coupons/{code}")
     Coupon getCoupon(@PathVariable String code);
 }
